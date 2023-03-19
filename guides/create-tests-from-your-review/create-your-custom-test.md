@@ -21,8 +21,7 @@ We have two main output variables:&#x20;
 
 ```python
 # 1. Import libraries
-from generated.ml_worker_pb2 import SingleTestResult
-from ml_worker.testing.abstract_test_collection import AbstractTestCollection
+from giskard import SingleTestResult, AbstractTestCollection
 
 # 2. Create your custom test 
 class CustomTest(AbstractTestCollection):

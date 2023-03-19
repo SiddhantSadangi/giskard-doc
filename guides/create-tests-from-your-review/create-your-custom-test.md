@@ -21,8 +21,7 @@ We have two main output variables:&#x20;
 
 ```python
 # 1. Import libraries
-from generated.ml_worker_pb2 import SingleTestResult
-from ml_worker.testing.abstract_test_collection import AbstractTestCollection
+from giskard import SingleTestResult, AbstractTestCollection
 
 # 2. Create your custom test 
 class CustomTest(AbstractTestCollection):
@@ -58,8 +57,7 @@ custom_test.test_function(
 #### 1. Custom test integrating with Great Expectations to validate column values are unique
 
 ```python
-from generated.ml_worker_pb2 import SingleTestResult
-from ml_worker.testing.abstract_test_collection import AbstractTestCollection
+from giskard import SingleTestResult, AbstractTestCollection
 
 class CustomTest(AbstractTestCollection):
 
@@ -87,8 +85,7 @@ custom_test.test_function(
 We have created a function "test\_category\_frequency" under the Class  `DataQuality` to check if the ratio of the Category in a column is less than a threshold
 
 ```python
-from generated.ml_worker_pb2 import SingleTestResult
-from ml_worker.testing.abstract_test_collection import AbstractTestCollection
+from giskard import SingleTestResult, AbstractTestCollection
 
 class DataQuality(AbstractTestCollection):
 
